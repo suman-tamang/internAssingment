@@ -1,0 +1,14 @@
+<div class="row col-lg-12">
+    <h3>Details</h3>
+    <div class="row col-lg-12">
+        <div class="card" style="width: 18rem;" *ngIf="selectedEmployee">
+            <div class="card-body">
+              <h5 class="card-title">{{selectedEmployee.preferredFullName}}</h5>
+              <p class="card-text">First Name: {{selectedEmployee.firstName}}</p>
+              <p class="card-text">Last Name: {{selectedEmployee.lastName}}</p>
+              <p class="card-text">Phone Number: {{selectedEmployee.phoneNumber}}</p>
+              <p class="card-text">Email: {{selectedEmployee.emailAddress}}</p>
+            </div>
+        </div>
+    </div>
+</div>

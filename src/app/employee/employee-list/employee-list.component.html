@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="col-lg-4">
+        <div class="row col-lg-12">
+            <h3>Employees List</h3>
+        </div>
+        <div class="row">
+            <ul class=" col-lg-12 list-group" *ngFor = "let emp of employees">
+                <li class="list-group-item" type="button" (click)="onClickedEmployee(emp.userId)"> {{emp.firstName}}</li> 
+            </ul>
+        </div>
+    </div>
+    <div class="col-lg-8">
+        <div class="row">
+            <div class="col-lg-12 employeeDetails">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+</div>
